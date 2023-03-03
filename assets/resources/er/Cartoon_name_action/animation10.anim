@@ -1,0 +1,123 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "animation10",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Panel_1/Panel_k/Panel_k_6": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": [],
+          "opacity": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_4/Panel_k_4_0/girl_44": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_4/Panel_k_4_0/k_4": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "anchorX": [],
+          "anchorY": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_4": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": [],
+          "opacity": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_5/Panel_k_5_0/k_5": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "anchorX": [],
+          "anchorY": [],
+          "rotation": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_5": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": [],
+          "opacity": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_1/Panel_k_1_0/girl_11": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_1/Panel_k_1_0/k_1": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_1": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": [],
+          "opacity": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_2/Panel_k_2_0/girl_22": {
+        "props": {
+          "position": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_2/Panel_k_2_0/k_2": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_2": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": [],
+          "opacity": []
+        }
+      },
+      "Panel_1_0/Panel_k22/Panel_k_3": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": [],
+          "opacity": []
+        }
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,287 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "animation1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Panel_1/Panel_k/Panel_k_1/Panel_k_1_0/k_1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                2.3622000000000014,
+                -3.8581000000000074
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 1
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_1": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": [],
+          "opacity": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_2/Panel_k_2_0/k_2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                130,
+                -95
+              ],
+              "curve": "backOut"
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                130,
+                -95
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0.0001,
+              "curve": "backOut"
+            },
+            {
+              "frame": 0.25,
+              "value": 0.7
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0.0001,
+              "curve": "backOut"
+            },
+            {
+              "frame": 0.25,
+              "value": 0.7
+            }
+          ],
+          "anchorX": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 1,
+              "curve": "backOut"
+            }
+          ],
+          "anchorY": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0,
+              "curve": "backOut"
+            }
+          ]
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                360,
+                640
+              ]
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": [
+                360,
+                640
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 1
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_3/Panel_k_3_0/girl_33": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_3/Panel_k_3_0/k_3": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                0,
+                170
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.5,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.5,
+              "value": 1
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_4/Panel_k_4_0/k_4": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_4": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": [],
+          "opacity": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_5/Panel_k_5_0/girl_55": {
+        "props": {
+          "position": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_5/Panel_k_5_0/k_5": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "anchorX": [],
+          "anchorY": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_5": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": [],
+          "opacity": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_6/Panel_k_6_0/girl_66": {
+        "props": {
+          "position": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_6/Panel_k_6_0/k_6": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": []
+        }
+      },
+      "Panel_1/Panel_k/Panel_k_6": {
+        "props": {
+          "position": [],
+          "scaleX": [],
+          "scaleY": [],
+          "rotation": [],
+          "opacity": []
+        }
+      }
+    }
+  },
+  "events": []
+}

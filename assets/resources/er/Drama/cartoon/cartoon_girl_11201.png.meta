@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "025d9d08-a653-421b-86e1-a22d98412eba",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 657,
+  "height": 1194,
+  "platformSettings": {},
+  "subMetas": {
+    "cartoon_girl_11201": {
+      "ver": "1.0.4",
+      "uuid": "7604b631-7839-4ee4-8a3f-a3afeed15140",
+      "rawTextureUuid": "025d9d08-a653-421b-86e1-a22d98412eba",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 657,
+      "height": 1194,
+      "rawWidth": 657,
+      "rawHeight": 1194,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
