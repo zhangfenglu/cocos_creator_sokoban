@@ -1,2 +1,2 @@
-# hello-world
-Hello world new project template.
+# cocoscreator framework
+堆积框架 用于游戏基础开发
