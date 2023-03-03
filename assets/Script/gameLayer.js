@@ -33,9 +33,9 @@ let sound = {
     PUSHBOX : "Texture/sound/pushbox",    //推箱子音效
     WRONG : "Texture/sound/wrong",        //错误音效
 }
-
+let UI_Control = require("./GUIBase/UI_Control")
 cc.Class({
-    extends: cc.Component,
+    extends: UI_Control,
 
     properties: {
         bg : cc.Node,
@@ -65,9 +65,11 @@ cc.Class({
         levelImgAtlas: cc.SpriteAtlas,
 
         levelItemPrefab : cc.Prefab,
+        aniPrefab:cc.Prefab,
     },
 
     onLoad : function(){
+        UI_Control.prototype.onLoad.call(this);
         //记录当前界面
         this.curLayer = 0;  //0-主界面，1-关卡界面，2-游戏界面
         //清理游戏中的数据
@@ -82,13 +84,15 @@ cc.Class({
         this.gameLayer.active = false;
         this.gameOverLayer.active = false;
         this.loadingTxt.active = true;
-        this.startBtn.getComponent(cc.Button).interactable = false;
+
 
         //背景图适配
         this.fitNode(this.bg);
 
         this.menuLayerAni();
+
     },
+
 
     // 适配结点
     fitNode: function (obj) {
@@ -99,6 +103,7 @@ cc.Class({
     },
 
     initData : function(){
+
         //初始化数据
         this.boxWidth = 90;
         this.boxHeight = 90;
@@ -107,9 +112,9 @@ cc.Class({
         this.allRow = 8;
         this.allCol = 8;
 
-        this.allLevelCount = 0;
-        this.allLevelConfig = {};
-        cc.loader.loadRes('levelConfig.json', function (err, object) {
+        //this.allLevelCount = 0;
+       // this.allLevelConfig = {};
+       /* cc.loader.loadRes('levelConfig.json', function (err, object) {
             if (err) {
                 console.log(err);
                 return;
@@ -121,17 +126,62 @@ cc.Class({
 
             //加载完配置后，直接创建关卡元素
             this.createLavelItem();
-        }.bind(this));
+        }.bind(this));*/
 
+        let Level_config = app.getConfigInfoByTable('Level_config')
+        cc.log(' levelInfo=====' + JSON.stringify(Level_config))
+        let allLevelCount = 0
+        for(let key in Level_config){
+            allLevelCount ++
+        }
+        this.allLevelConfig = Level_config
+        this.allLevelCount = allLevelCount
+
+        this.loadingTxt.active = false;
+        this.startBtn.getComponent(cc.Button).interactable = true;
         this.tabLevel = [];
+        //加载完配置后，直接创建关卡元素
+        this.createLavelItem();
+
+        //个人新加的 动画预制体
+       /* let node = cc.instantiate(this.aniPrefab)
+        node.parent = this.view['background']
+        node.x = -node.parent.width / 2
+        node.y = -node.parent.height / 2*/
+
+
+        /*app.dynamicAddPrefab('Cartoon_01',this.view['background'],(aniPrefab)=>{
+            aniPrefab.x = -aniPrefab.parent.width / 2
+            aniPrefab.y = -aniPrefab.parent.height / 2
+        })*/
+
+        app.btnClick(this.view['background'],()=>{
+            cc.log('背景已点击')
+            app.dynamicAddPrefab('Drama',this.view['background'],(Prefab)=>{
+                Prefab.x = -Prefab.parent.width / 2
+                Prefab.y = -Prefab.parent.height / 2
+                let PrefabScript = Prefab.getComponent('View_Dialogue')
+                let Manager_Plot = app.getManager_Plot()
+                let juQingId = 2001
+                Manager_Plot.PlayJuQing(PrefabScript,juQingId,()=>{})
+            })
+        })
+
+       /* app.dynamicAddPrefab('Drama',this.view['background'],(aniPrefab)=>{
+            aniPrefab.x = -aniPrefab.parent.width / 2
+            aniPrefab.y = -aniPrefab.parent.height / 2
+        })*/
+
     },
 
     // 创建关卡界面子元素
     createLavelItem (){
         // 进入关卡level
-        let callfunc = level => {            
+        let callfunc = level => {
             this.selectLevelCallBack(level);
         };
+
+        console.log('this.allLevelCount=====' + this.allLevelCount)
 
         for(let i = 0; i < this.allLevelCount; i++){
             let node = cc.instantiate(this.levelItemPrefab);
@@ -158,7 +208,7 @@ cc.Class({
                 this.tabLevel[i - 1].showStar(true, 0, this.levelImgAtlas, i);
             }
             // 未开启关卡图
-            else{  
+            else{
                 this.tabLevel[i - 1].showStar(false, 0, this.levelImgAtlas, i);
             }
         }
@@ -168,19 +218,22 @@ cc.Class({
     menuLayerAni(){
         this.startBtn.scale = 1.0;
         this.startBtn.runAction(cc.repeatForever(cc.sequence(
-            cc.scaleTo(0.6, 1.5), 
+            cc.scaleTo(0.6, 1.5),
             cc.scaleTo(0.6, 1.0)
         )));
+
+       // this.startBtnCallBack()
     },
 
     //开始按钮回调
     startBtnCallBack(event, customEventData){
+        console.log("this.curLayer===" )
         if(this.curLayer == 1){
             return;
         }
         this.curLayer = 1;
 
-        this.playSound(sound.BUTTON);       
+        this.playSound(sound.BUTTON);
 
         this.menuLayer.runAction(cc.sequence(
             cc.fadeOut(0.1),
@@ -195,8 +248,8 @@ cc.Class({
         this.levelLayer.active = true;
         this.levelLayer.opacity = 0;
         this.levelLayer.runAction(cc.sequence(
-            cc.delayTime(0.1), 
-            cc.fadeIn(0.1), 
+            cc.delayTime(0.1),
+            cc.fadeIn(0.1),
             cc.callFunc(() => {
                 this.updateLevelInfo();
             }
@@ -298,11 +351,19 @@ cc.Class({
         this.setLevel();
         this.setCurNum();
         this.setBestNum();
-        let levelContent = this.allLevelConfig[level].content;
-        this.allRow = this.allLevelConfig[level].allRow;
+       // let levelContent = this.allLevelConfig[level].content;
+       /* this.allRow = this.allLevelConfig[level].allRow;
         this.allCol = this.allLevelConfig[level].allCol;
         this.heroRow = this.allLevelConfig[level].heroRow;
-        this.heroCol = this.allLevelConfig[level].heroCol;
+        this.heroCol = this.allLevelConfig[level].heroCol;*/
+        let levelInfo =  app.getConfigInfoByTable('Level_config',null,level)
+        cc.log(' levelInfo=====' + JSON.stringify(levelInfo))
+
+        let levelContent = levelInfo.content;
+        this.allRow = levelInfo.allRow;
+        this.allCol = levelInfo.allCol;
+        this.heroRow = levelInfo.heroRow;
+        this.heroCol = levelInfo.heroCol;
 
         // 计算方块大小
         this.boxW = this.allWidth / this.allCol;
@@ -320,10 +381,11 @@ cc.Class({
         else{
             offset = ((this.allRow - this.allCol) * this.boxH) / 2;
         }
+
         this.landArrays = [];   //地图容器
         this.palace = [];       //初始化地图数据
         for(let i = 0; i < this.allRow; i++){
-            this.landArrays[i] = [];  
+            this.landArrays[i] = [];
             this.palace[i] = [];
         }
 
@@ -400,7 +462,7 @@ cc.Class({
             this.getPath(this.start, 0, []);
 
             if(this.minPath <= this.allCol * this.allRow){
-                cc.log("从起点[", this.start.row, ",", this.start.col, "]到终点[", 
+                cc.log("从起点[", this.start.row, ",", this.start.col, "]到终点[",
                 this.end.row, ",", this.end.col, "]最短路径长为：", this.minPath, "最短路径为：");
 
                 cc.log("[", this.start.row, ",", this.start.col, "]");
@@ -453,7 +515,7 @@ cc.Class({
                     this.curStepNum += 1;
                     //刷新步数
                     this.setCurNum();
-                    
+
                     //刷新人物位置
                     this.heroRow = this.end.row;
                     this.heroCol = this.end.col;
@@ -569,17 +631,19 @@ cc.Class({
             land.width = this.boxW;
             land.height = this.boxH;
         }
-    },  
+    },
 
     // 游戏结束检测
     checkGameOver(){
-        let count = this.allLevelConfig[this.curLevel].allBox;
+        let levelInfo =  app.getConfigInfoByTable('Level_config',null,this.curLevel)
+        //let count = this.allLevelConfig[this.curLevel].allBox;
+        let count = levelInfo.allBox
         // 全部推到了指定位置
-        if(this.finishBoxCount == count){   
+        if(this.finishBoxCount == count){
             this.gameOverLayer.active = true;
-            this.gameOverLayer.opacity = 1; 
+            this.gameOverLayer.opacity = 1;
             this.gameOverLayer.runAction(cc.sequence(
-                cc.delayTime(0.5), 
+                cc.delayTime(0.5),
                 cc.fadeIn(0.1)
             ));
 
@@ -621,7 +685,6 @@ cc.Class({
     //清理游戏中数据
     clearGameData : function(){
         this.finishBoxCount = 0;
-        this.curStepNum = 0;
         this.curStepNum = 0;
     },
 
