@@ -48,6 +48,15 @@ cc.Class({
         }
     },
 
+    getJuQingContentByARowIndex(tableName, wordIndex) {
+        let plotInfo = app.getConfigInfoByTable(tableName,null,wordIndex)
+        let tableData = {}
+        tableData.totalWordsNum = app.getObjectLength( app.getConfigInfoByTable(tableName,null,null))
+        tableData.curDiaLog = plotInfo
+        if(typeof tableData.curDiaLog === 'undefined' ) return null
+        return tableData
+    },
+
     start () {
 
     },

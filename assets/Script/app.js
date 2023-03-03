@@ -3,21 +3,25 @@ if (!window.app) window.app = {}
 let Manager_Plot = require("./GameManager/Manager_Plot")
 app.Manager_Plot = new Manager_Plot()
 
+//配置文件必须放在 resources中 且不能包含路径 直接 require
 app.getConfigInfoByTable = function(tableName,childTableName,index){
+	if(tableName.indexOf('/') !== -1){
+		tableName = tableName.substring(tableName.lastIndexOf('/') + 1)
+	}
     let requireTable =  tableName
     cc.log('加载 配置文件===' + requireTable)
 	let table = require (requireTable)
 	if (index == null){
 		if(childTableName == null) return table
-		return table.data[tableName]
+		return table[childTableName]
 	}
 	index = index + ''
 	if(index.indexOf('id_') !== -1)  {
 		if(childTableName == null) return table[index]
-		return table.data[tableName][index]
+		return table[childTableName][index]
 	}else{
 		if(childTableName == null) return table["id_" + index]
-		return table.data[tableName]["id_" + index]
+		return table[childTableName]["id_" + index]
 	}
 }
 
@@ -71,9 +75,18 @@ app.isObjectValid = function(node) {
 	return false
 }
 
+//获取对象长度
+app.getObjectLength = function(object) {
+	let length = 0
+	for(let key in object) length ++
+	return length
+}
+
 //获取剧情管理类
 app.getManager_Plot = function() {
 	return app.Manager_Plot
 }
+
+
 
 
