@@ -1,0 +1,90 @@
+
+role23001.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: false
+  xy: 469, 512
+  size: 117, 484
+  orig: 118, 484
+  offset: 0, 0
+  index: -1
+arm_r
+  rotate: false
+  xy: 588, 637
+  size: 281, 359
+  orig: 281, 359
+  offset: 0, 0
+  index: -1
+back
+  rotate: false
+  xy: 588, 484
+  size: 204, 151
+  orig: 204, 151
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 2
+  size: 451, 1089
+  orig: 506, 1089
+  offset: 55, 0
+  index: -1
+down
+  rotate: true
+  xy: 2, 455
+  size: 541, 465
+  orig: 541, 465
+  offset: 0, 0
+  index: -1
+face
+  rotate: true
+  xy: 794, 494
+  size: 141, 75
+  orig: 141, 75
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 871, 675
+  size: 321, 284
+  orig: 321, 284
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 931, 477
+  size: 196, 183
+  orig: 196, 184
+  offset: 0, 1
+  index: -1
+knight
+  rotate: true
+  xy: 1116, 559
+  size: 114, 72
+  orig: 114, 73
+  offset: 0, 1
+  index: -1
+shi
+  rotate: true
+  xy: 1093, 174
+  size: 104, 83
+  orig: 106, 84
+  offset: 2, 0
+  index: -1
+sp1
+  rotate: false
+  xy: 871, 458
+  size: 58, 215
+  orig: 58, 215
+  offset: 0, 0
+  index: -1
+sp2
+  rotate: false
+  xy: 1093, 280
+  size: 81, 195
+  orig: 81, 195
+  offset: 0, 0
+  index: -1

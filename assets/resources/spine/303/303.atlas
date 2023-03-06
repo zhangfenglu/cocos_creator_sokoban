@@ -1,0 +1,180 @@
+
+303.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+134022_cr_1
+  rotate: true
+  xy: 1603, 1166
+  size: 212, 322
+  orig: 212, 322
+  offset: 0, 0
+  index: -1
+134022_cr_2
+  rotate: false
+  xy: 930, 1433
+  size: 268, 123
+  orig: 268, 123
+  offset: 0, 0
+  index: -1
+134022_cr_3
+  rotate: false
+  xy: 545, 1272
+  size: 212, 186
+  orig: 212, 186
+  offset: 0, 0
+  index: -1
+134022_s_1
+  rotate: false
+  xy: 1038, 1191
+  size: 242, 200
+  orig: 242, 200
+  offset: 0, 0
+  index: -1
+134022_s_2
+  rotate: true
+  xy: 237, 1276
+  size: 182, 306
+  orig: 182, 306
+  offset: 0, 0
+  index: -1
+134022_shetou
+  rotate: true
+  xy: 2, 1486
+  size: 70, 76
+  orig: 70, 76
+  offset: 0, 0
+  index: -1
+134022_x_1
+  rotate: false
+  xy: 1172, 2
+  size: 706, 686
+  orig: 706, 686
+  offset: 0, 0
+  index: -1
+134022_x_2
+  rotate: true
+  xy: 1200, 1393
+  size: 163, 432
+  orig: 163, 432
+  offset: 0, 0
+  index: -1
+134022_x_3
+  rotate: false
+  xy: 568, 175
+  size: 602, 513
+  orig: 602, 513
+  offset: 0, 0
+  index: -1
+134022_x_4
+  rotate: false
+  xy: 1145, 690
+  size: 506, 474
+  orig: 506, 474
+  offset: 0, 0
+  index: -1
+134022_y_1
+  rotate: false
+  xy: 237, 1463
+  size: 266, 93
+  orig: 266, 93
+  offset: 0, 0
+  index: -1
+134022_y_2
+  rotate: false
+  xy: 1282, 1181
+  size: 319, 210
+  orig: 319, 210
+  offset: 0, 0
+  index: -1
+134022_y_3
+  rotate: false
+  xy: 2, 387
+  size: 564, 490
+  orig: 564, 490
+  offset: 0, 0
+  index: -1
+134022_y_4
+  rotate: false
+  xy: 505, 1460
+  size: 423, 96
+  orig: 423, 96
+  offset: 0, 0
+  index: -1
+dzjq
+  rotate: true
+  xy: 2, 879
+  size: 391, 569
+  orig: 391, 569
+  offset: 0, 0
+  index: -1
+yumao2
+  rotate: false
+  xy: 573, 775
+  size: 570, 414
+  orig: 570, 414
+  offset: 0, 0
+  index: -1
+yumao3
+  rotate: false
+  xy: 2, 1312
+  size: 233, 169
+  orig: 233, 169
+  offset: 0, 0
+  index: -1
+图层 1
+  rotate: false
+  xy: 759, 1237
+  size: 277, 194
+  orig: 611, 459
+  offset: 0, 0
+  index: -1
+图层 2
+  rotate: false
+  xy: 80, 1483
+  size: 155, 73
+  orig: 155, 73
+  offset: 0, 0
+  index: -1
+表情1
+  rotate: true
+  xy: 1819, 1380
+  size: 176, 196
+  orig: 177, 196
+  offset: 0, 0
+  index: -1
+表情2
+  rotate: true
+  xy: 1634, 1393
+  size: 163, 183
+  orig: 172, 183
+  offset: 7, 0
+  index: -1
+
+3032.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+発光エフェクト
+  rotate: false
+  xy: 1186, 252
+  size: 734, 738
+  orig: 734, 738
+  offset: 0, 0
+  index: -1
+発光エフェクト 拷贝
+  rotate: false
+  xy: 2, 2
+  size: 1182, 988
+  orig: 1182, 988
+  offset: 0, 0
+  index: -1
+背景
+  rotate: false
+  xy: 2, 992
+  size: 1330, 988
+  orig: 1330, 988
+  offset: 0, 0
+  index: -1

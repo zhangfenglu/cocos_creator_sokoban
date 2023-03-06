@@ -1,0 +1,90 @@
+
+role4001.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 2
+  size: 916, 1538
+  orig: 918, 1538
+  offset: 2, 0
+  index: -1
+hair
+  rotate: true
+  xy: 949, 1269
+  size: 166, 220
+  orig: 166, 234
+  offset: 0, 14
+  index: -1
+hair1
+  rotate: false
+  xy: 2, 1100
+  size: 318, 223
+  orig: 318, 223
+  offset: 0, 0
+  index: -1
+hair2
+  rotate: true
+  xy: 604, 946
+  size: 321, 553
+  orig: 321, 553
+  offset: 0, 0
+  index: -1
+hair3
+  rotate: true
+  xy: 1159, 920
+  size: 346, 458
+  orig: 346, 458
+  offset: 0, 0
+  index: -1
+hair_l
+  rotate: true
+  xy: 629, 1276
+  size: 159, 318
+  orig: 162, 324
+  offset: 3, 0
+  index: -1
+hair_r
+  rotate: true
+  xy: 323, 1286
+  size: 149, 304
+  orig: 229, 319
+  offset: 68, 12
+  index: -1
+sp
+  rotate: true
+  xy: 1171, 1268
+  size: 167, 368
+  orig: 167, 369
+  offset: 0, 0
+  index: -1
+zhui_jian
+  rotate: true
+  xy: 2, 1355
+  size: 80, 144
+  orig: 80, 144
+  offset: 0, 0
+  index: -1
+zhui_l
+  rotate: false
+  xy: 322, 1050
+  size: 280, 234
+  orig: 280, 236
+  offset: 0, 2
+  index: -1
+zhui_r
+  rotate: false
+  xy: 1541, 1268
+  size: 295, 167
+  orig: 295, 167
+  offset: 0, 0
+  index: -1
+zhuui
+  rotate: true
+  xy: 148, 1325
+  size: 110, 173
+  orig: 110, 173
+  offset: 0, 0
+  index: -1

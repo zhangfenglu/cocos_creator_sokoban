@@ -1,0 +1,125 @@
+
+role16901.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bai_l
+  rotate: true
+  xy: 452, 101
+  size: 193, 436
+  orig: 193, 436
+  offset: 0, 0
+  index: -1
+bai_r
+  rotate: false
+  xy: 452, 296
+  size: 247, 409
+  orig: 247, 409
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 707
+  size: 930, 1339
+  orig: 930, 1339
+  offset: 0, 0
+  index: -1
+bubble_a
+  rotate: true
+  xy: 701, 443
+  size: 262, 260
+  orig: 264, 261
+  offset: 1, 1
+  index: -1
+bubble_o
+  rotate: false
+  xy: 934, 1610
+  size: 213, 211
+  orig: 215, 212
+  offset: 1, 1
+  index: -1
+circle
+  rotate: true
+  xy: 934, 1823
+  size: 223, 231
+  orig: 224, 233
+  offset: 0, 0
+  index: -1
+flower
+  rotate: true
+  xy: 890, 103
+  size: 231, 227
+  orig: 231, 227
+  offset: 0, 0
+  index: -1
+hair1
+  rotate: true
+  xy: 701, 336
+  size: 105, 202
+  orig: 105, 202
+  offset: 0, 0
+  index: -1
+hair2
+  rotate: false
+  xy: 871, 44
+  size: 105, 55
+  orig: 105, 55
+  offset: 0, 0
+  index: -1
+hair3
+  rotate: true
+  xy: 452, 13
+  size: 86, 138
+  orig: 86, 138
+  offset: 0, 0
+  index: -1
+hair4
+  rotate: true
+  xy: 592, 30
+  size: 69, 164
+  orig: 72, 164
+  offset: 0, 0
+  index: -1
+hair5
+  rotate: true
+  xy: 758, 23
+  size: 76, 111
+  orig: 76, 111
+  offset: 0, 0
+  index: -1
+light_point
+  rotate: true
+  xy: 2, 40
+  size: 665, 448
+  orig: 665, 448
+  offset: 0, 0
+  index: -1
+star_milk
+  rotate: false
+  xy: 978, 37
+  size: 61, 64
+  orig: 61, 64
+  offset: 0, 0
+  index: -1
+star_white
+  rotate: false
+  xy: 1041, 50
+  size: 50, 51
+  orig: 51, 53
+  offset: 1, 1
+  index: -1
+star_yellow
+  rotate: false
+  xy: 40, 6
+  size: 31, 32
+  orig: 31, 32
+  offset: 0, 0
+  index: -1
+xing
+  rotate: false
+  xy: 2, 2
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1

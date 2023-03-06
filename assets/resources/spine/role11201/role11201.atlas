@@ -1,0 +1,83 @@
+
+role11201.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: false
+  xy: 552, 98
+  size: 90, 173
+  orig: 90, 173
+  offset: 0, 0
+  index: -1
+arm_r
+  rotate: false
+  xy: 495, 273
+  size: 146, 306
+  orig: 146, 306
+  offset: 0, 0
+  index: -1
+back
+  rotate: false
+  xy: 495, 581
+  size: 387, 468
+  orig: 387, 468
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 1051
+  size: 841, 995
+  orig: 841, 1020
+  offset: 0, 0
+  index: -1
+down
+  rotate: false
+  xy: 2, 10
+  size: 402, 219
+  orig: 402, 219
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 552, 2
+  size: 124, 94
+  orig: 124, 102
+  offset: 0, 8
+  index: -1
+hair
+  rotate: false
+  xy: 644, 119
+  size: 379, 460
+  orig: 379, 460
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 678, 45
+  size: 53, 72
+  orig: 59, 74
+  offset: 5, 2
+  index: -1
+head
+  rotate: false
+  xy: 406, 31
+  size: 144, 209
+  orig: 144, 209
+  offset: 0, 0
+  index: -1
+leg_l
+  rotate: false
+  xy: 315, 242
+  size: 178, 807
+  orig: 182, 807
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: false
+  xy: 2, 231
+  size: 311, 818
+  orig: 311, 818
+  offset: 0, 0
+  index: -1

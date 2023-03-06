@@ -1,0 +1,83 @@
+
+role13401.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+A
+  rotate: false
+  xy: 2, 804
+  size: 1051, 1241
+  orig: 1051, 1241
+  offset: 0, 0
+  index: -1
+B
+  rotate: true
+  xy: 1055, 1544
+  size: 501, 830
+  orig: 501, 830
+  offset: 0, 0
+  index: -1
+C
+  rotate: false
+  xy: 2, 163
+  size: 1049, 639
+  orig: 1049, 639
+  offset: 0, 0
+  index: -1
+back
+  rotate: false
+  xy: 562, 23
+  size: 187, 138
+  orig: 187, 138
+  offset: 0, 0
+  index: -1
+bubble
+  rotate: true
+  xy: 1053, 213
+  size: 36, 33
+  orig: 37, 34
+  offset: 0, 0
+  index: -1
+eye
+  rotate: true
+  xy: 1045, 20
+  size: 141, 101
+  orig: 143, 101
+  offset: 1, 0
+  index: -1
+fagu
+  rotate: false
+  xy: 751, 33
+  size: 189, 128
+  orig: 194, 129
+  offset: 0, 1
+  index: -1
+hair
+  rotate: false
+  xy: 942, 2
+  size: 101, 159
+  orig: 101, 159
+  offset: 0, 0
+  index: -1
+hair1
+  rotate: false
+  xy: 1055, 817
+  size: 461, 725
+  orig: 461, 737
+  offset: 0, 0
+  index: -1
+hair2
+  rotate: true
+  xy: 1053, 251
+  size: 551, 787
+  orig: 551, 787
+  offset: 0, 0
+  index: -1
+hair_r
+  rotate: true
+  xy: 2, 14
+  size: 147, 558
+  orig: 147, 558
+  offset: 0, 0
+  index: -1

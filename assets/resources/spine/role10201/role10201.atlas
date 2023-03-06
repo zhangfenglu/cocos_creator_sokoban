@@ -1,0 +1,62 @@
+
+role10201.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_r
+  rotate: true
+  xy: 1444, 7
+  size: 276, 363
+  orig: 276, 363
+  offset: 0, 0
+  index: -1
+back
+  rotate: false
+  xy: 1201, 2
+  size: 241, 281
+  orig: 241, 281
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 9
+  size: 494, 844
+  orig: 532, 844
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 848, 9
+  size: 168, 117
+  orig: 182, 125
+  offset: 8, 7
+  index: -1
+hair
+  rotate: true
+  xy: 848, 128
+  size: 375, 351
+  orig: 445, 351
+  offset: 26, 0
+  index: -1
+jie
+  rotate: true
+  xy: 1018, 62
+  size: 64, 48
+  orig: 64, 48
+  offset: 0, 0
+  index: -1
+leg
+  rotate: true
+  xy: 1201, 285
+  size: 218, 798
+  orig: 379, 831
+  offset: 0, 33
+  index: -1
+sp
+  rotate: false
+  xy: 1809, 144
+  size: 153, 139
+  orig: 153, 139
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,62 @@
+
+role1201.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: true
+  xy: 368, 650
+  size: 186, 272
+  orig: 186, 273
+  offset: 0, 1
+  index: -1
+arm_r
+  rotate: true
+  xy: 1354, 520
+  size: 316, 521
+  orig: 316, 521
+  offset: 0, 0
+  index: -1
+back
+  rotate: true
+  xy: 891, 530
+  size: 306, 461
+  orig: 920, 648
+  offset: 614, 0
+  index: -1
+body
+  rotate: true
+  xy: 793, 2
+  size: 516, 895
+  orig: 516, 895
+  offset: 0, 0
+  index: -1
+chara
+  rotate: false
+  xy: 642, 593
+  size: 247, 243
+  orig: 247, 243
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 2, 743
+  size: 140, 93
+  orig: 141, 95
+  offset: 0, 1
+  index: -1
+fan
+  rotate: true
+  xy: 144, 682
+  size: 154, 222
+  orig: 154, 230
+  offset: 0, 8
+  index: -1
+leg
+  rotate: true
+  xy: 2, 52
+  size: 539, 789
+  orig: 539, 790
+  offset: 0, 0
+  index: -1

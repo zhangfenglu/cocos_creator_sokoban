@@ -1,0 +1,90 @@
+
+role1001.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: true
+  xy: 875, 375
+  size: 72, 91
+  orig: 74, 93
+  offset: 2, 0
+  index: -1
+arm_r
+  rotate: true
+  xy: 423, 501
+  size: 139, 151
+  orig: 210, 158
+  offset: 0, 0
+  index: -1
+back
+  rotate: true
+  xy: 423, 782
+  size: 779, 1004
+  orig: 779, 1004
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 295
+  size: 419, 1266
+  orig: 419, 1266
+  offset: 0, 0
+  index: -1
+bu
+  rotate: false
+  xy: 346, 122
+  size: 226, 171
+  orig: 228, 172
+  offset: 1, 0
+  index: -1
+dai
+  rotate: true
+  xy: 784, 548
+  size: 92, 132
+  orig: 126, 132
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 2, 2
+  size: 342, 291
+  orig: 342, 323
+  offset: 0, 18
+  index: -1
+hand_l
+  rotate: true
+  xy: 576, 527
+  size: 113, 206
+  orig: 113, 206
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 423, 374
+  size: 141, 125
+  orig: 142, 125
+  offset: 1, 0
+  index: -1
+leg_r
+  rotate: true
+  xy: 423, 642
+  size: 138, 516
+  orig: 165, 530
+  offset: 6, 0
+  index: -1
+sp_l
+  rotate: true
+  xy: 566, 411
+  size: 88, 307
+  orig: 99, 320
+  offset: 11, 0
+  index: -1
+sp_r
+  rotate: false
+  xy: 941, 449
+  size: 119, 331
+  orig: 120, 359
+  offset: 1, 16
+  index: -1

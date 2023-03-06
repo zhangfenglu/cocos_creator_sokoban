@@ -1,0 +1,153 @@
+
+normal_boss_1.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm-L
+  rotate: false
+  xy: 997, 7
+  size: 154, 85
+  orig: 154, 85
+  offset: 0, 0
+  index: -1
+arm-R
+  rotate: false
+  xy: 841, 6
+  size: 154, 86
+  orig: 154, 86
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 30
+  size: 279, 215
+  orig: 279, 215
+  offset: 0, 0
+  index: -1
+gun-L
+  rotate: false
+  xy: 786, 94
+  size: 127, 151
+  orig: 127, 151
+  offset: 0, 0
+  index: -1
+gun-R
+  rotate: false
+  xy: 915, 94
+  size: 127, 151
+  orig: 127, 151
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 1655, 70
+  size: 93, 58
+  orig: 93, 58
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 677, 49
+  size: 196, 107
+  orig: 196, 107
+  offset: 0, 0
+  index: -1
+leg-L
+  rotate: true
+  xy: 1209, 144
+  size: 101, 157
+  orig: 101, 157
+  offset: 0, 0
+  index: -1
+leg-R
+  rotate: true
+  xy: 1368, 144
+  size: 101, 157
+  orig: 101, 157
+  offset: 0, 0
+  index: -1
+light
+  rotate: true
+  xy: 1655, 2
+  size: 66, 60
+  orig: 66, 60
+  offset: 0, 0
+  index: -1
+obj-5
+  rotate: false
+  xy: 1643, 165
+  size: 75, 80
+  orig: 75, 80
+  offset: 0, 0
+  index: -1
+obj-L-1
+  rotate: true
+  xy: 759, 3
+  size: 44, 80
+  orig: 44, 80
+  offset: 0, 0
+  index: -1
+obj-L-2
+  rotate: false
+  xy: 1044, 129
+  size: 163, 116
+  orig: 163, 116
+  offset: 0, 0
+  index: -1
+obj-L-3
+  rotate: true
+  xy: 1527, 162
+  size: 83, 114
+  orig: 83, 114
+  offset: 0, 0
+  index: -1
+obj-R-1
+  rotate: true
+  xy: 677, 2
+  size: 45, 80
+  orig: 45, 80
+  offset: 0, 0
+  index: -1
+obj-R-2
+  rotate: false
+  xy: 1153, 11
+  size: 163, 116
+  orig: 163, 116
+  offset: 0, 0
+  index: -1
+obj-R-3
+  rotate: false
+  xy: 1570, 46
+  size: 83, 114
+  orig: 83, 114
+  offset: 0, 0
+  index: -1
+rocket-L
+  rotate: true
+  xy: 1318, 9
+  size: 133, 124
+  orig: 133, 124
+  offset: 0, 0
+  index: -1
+rocket-R
+  rotate: true
+  xy: 1444, 9
+  size: 133, 124
+  orig: 133, 124
+  offset: 0, 0
+  index: -1
+swing-L
+  rotate: true
+  xy: 283, 29
+  size: 216, 195
+  orig: 216, 195
+  offset: 0, 0
+  index: -1
+swing-R
+  rotate: true
+  xy: 480, 29
+  size: 216, 195
+  orig: 216, 195
+  offset: 0, 0
+  index: -1

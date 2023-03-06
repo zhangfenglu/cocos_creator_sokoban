@@ -1,0 +1,76 @@
+
+role101.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: false
+  xy: 1463, 1330
+  size: 246, 208
+  orig: 256, 208
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 2
+  size: 985, 1559
+  orig: 985, 1559
+  offset: 0, 0
+  index: -1
+h1
+  rotate: false
+  xy: 1711, 1139
+  size: 282, 399
+  orig: 282, 399
+  offset: 0, 0
+  index: -1
+h2
+  rotate: true
+  xy: 554, 1050
+  size: 310, 460
+  orig: 310, 460
+  offset: 0, 0
+  index: -1
+h3
+  rotate: true
+  xy: 1016, 989
+  size: 339, 562
+  orig: 339, 562
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 2, 1477
+  size: 61, 133
+  orig: 61, 133
+  offset: 0, 0
+  index: -1
+hair_l
+  rotate: true
+  xy: 1077, 1331
+  size: 207, 384
+  orig: 207, 384
+  offset: 0, 0
+  index: -1
+hair_r
+  rotate: true
+  xy: 2, 1138
+  size: 226, 550
+  orig: 432, 711
+  offset: 206, 161
+  index: -1
+hand_l
+  rotate: false
+  xy: 830, 1362
+  size: 245, 176
+  orig: 246, 177
+  offset: 1, 0
+  index: -1
+sp
+  rotate: true
+  xy: 137, 1366
+  size: 172, 691
+  orig: 175, 691
+  offset: 0, 0
+  index: -1

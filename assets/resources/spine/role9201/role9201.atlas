@@ -1,0 +1,48 @@
+
+role9201.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 93
+  size: 984, 1521
+  orig: 1151, 1633
+  offset: 167, 1
+  index: -1
+dai_l
+  rotate: false
+  xy: 2, 1508
+  size: 96, 91
+  orig: 96, 91
+  offset: 0, 0
+  index: -1
+dai_r
+  rotate: true
+  xy: 100, 1504
+  size: 95, 96
+  orig: 95, 96
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 198, 1500
+  size: 146, 99
+  orig: 147, 99
+  offset: 1, 0
+  index: -1
+hair
+  rotate: false
+  xy: 976, 1079
+  size: 623, 520
+  orig: 623, 520
+  offset: 0, 0
+  index: -1
+leg
+  rotate: true
+  xy: 346, 1341
+  size: 258, 628
+  orig: 258, 628
+  offset: 0, 0
+  index: -1

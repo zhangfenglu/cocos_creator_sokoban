@@ -41,9 +41,10 @@ cc.Class({
      },
 
      playCsbAction:function(actionName, isLoop, func){
-         let animationComponet = this.getComponent(cc.Animation)
-         if(isLoop) animState.wrapMode = cc.WrapMode.Loop
+         let animationComponet = this.root.addComponent(cc.Animation)
+         //let animationComponet = this.getComponent(cc.Animation)
          let animState = animationComponet.play(actionName)
+         if(isLoop) animationComponet.wrapMode = cc.WrapMode.Loop
          if (animState) {
              animState.on('stop', (event) => {
                  // 处理停止播放时的逻辑
@@ -51,6 +52,8 @@ cc.Class({
                 if(func) func()
              }, this)
 
+         }else {
+             if(func) func()
          }
      },
 

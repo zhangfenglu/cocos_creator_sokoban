@@ -9,7 +9,7 @@ app.getConfigInfoByTable = function(tableName,childTableName,index){
 		tableName = tableName.substring(tableName.lastIndexOf('/') + 1)
 	}
     let requireTable =  tableName
-    cc.log('加载 配置文件===' + requireTable)
+   // cc.log('加载 配置文件===' + requireTable)
 	let table = require (requireTable)
 	if (index == null){
 		if(childTableName == null) return table
@@ -40,7 +40,7 @@ app.dynamicAddPrefab = function(str,parentNode,callback) {
 		let newMyPrefab = cc.instantiate(loadedResource)
 		newMyPrefab.parent = parentNode
 		//parentNode.addChild(newMyPrefab)
-		newMyPrefab.setPosition(0, 0 )
+		//newMyPrefab.setPosition(0, 0 )
 		if(callback) callback(newMyPrefab)
 		//let newMyPrefabScript = newMyPrefab.getComponent('showTips')
 	}
@@ -82,9 +82,111 @@ app.getObjectLength = function(object) {
 	return length
 }
 
+//字符串截取 start开始位置,length截取长度不能负数
+app.getSubStr = function(coment,start,length){
+    return coment.substr(start,length)
+}
+
 //获取剧情管理类
 app.getManager_Plot = function() {
 	return app.Manager_Plot
+}
+
+//播放spin动画
+app.playSpinAction = function (parentNode, skelName, atlasName, trackIndex, actionName, isLoop, func) {
+	parentNode.visible = true
+    cc.loader.loadRes(skelName, sp.SkeletonData, (err, skeletonData) => {
+    	cc.log('spine 加载成功了吗 ===' + skeletonData)
+        let s = parentNode.addComponent(sp.Skeleton)
+        s.skeletonData = skeletonData
+        //播放动画
+        s.setAnimation(trackIndex, actionName, isLoop)
+        //监听播放完毕的回调
+        s.setCompleteListener(trackEntry => {
+        	//cc.log(' trackEntry===' + JSON.stringify(trackEntry.animation))
+            let animationName = trackEntry.animation ? trackEntry.animation.name : ''
+            cc.log('[complete] animation: ' + animationName)
+            if(func) func()
+        })
+    })
+}
+
+
+//延迟执行
+app.delayHandle = function (node,func,delayTime,isStopAllAction) {
+	let time = cc.delayTime(delayTime)
+	let callback = cc.callFunc(function () {
+		if(func) func()
+		if(node && app.isObjectValid(node) && isStopAllAction){
+			node.stopAllActions()
+		}
+	})
+	let sequence = cc.sequence(time, callback)
+	if(node && app.isObjectValid(node)) node.runAction(sequence)
+}
+
+
+//循环执行
+app.repeatHandle = function (node,func,delayTime) {
+	if(node && app.isObjectValid(node)) {
+		let time = cc.delayTime(delayTime)
+		let callback = cc.callFunc(function () {
+			if (func) func()
+		})
+		let sequence = cc.sequence(time, callback)
+		let action = cc.repeatForever(sequence)
+		node.runAction(action)
+	}
+}
+
+//截取指定个字符
+app.substr = function (content, num) {
+	let newStr = ""
+	if(num <= content.length) {
+		for (let i = 0; i < num; i++) {
+			let onlyStr = content.charAt(i)
+			newStr = newStr + onlyStr
+		}
+	}
+	return newStr
+}
+
+app.setTypingSpead = function(spead){
+	app.typingSpead = spead
+}
+
+app.getTypingSpead = function(){
+	if(typeof (app.typingSpead) === undefined || !app.typingSpead) {
+		app.typingSpead = 1
+	}
+	return app.typingSpead
+}
+
+//自动输出文字功能
+app.autoTyping = function (node, content, pauseTime, typingSpead,func) {
+	let num = 1
+	if(node) node.stopAllActions()
+	node.visible = true
+	app.delayHandle(node,function () {
+		app.repeatHandle(node,function (){
+			let subStr = app.substr(content,num)
+			if(subStr === content && func){
+				func()
+				node.stopAllActions()
+				node.getComponent(cc.Label).string = subStr
+				app.setTypingSpead(1)
+				return
+			}
+			num = num + app.getTypingSpead()
+			if(subStr === '' && func){
+				func()
+				node.stopAllActions()
+				app.setTypingSpead(1)
+				return
+			}
+			node.getComponent(cc.Label).string = subStr
+		},typingSpead)
+	},pauseTime)
 }
 
 

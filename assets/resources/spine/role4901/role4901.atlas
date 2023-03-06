@@ -1,0 +1,55 @@
+
+role4901.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: true
+  xy: 599, 1664
+  size: 161, 401
+  orig: 161, 403
+  offset: 0, 2
+  index: -1
+arm_r
+  rotate: true
+  xy: 2, 1682
+  size: 143, 405
+  orig: 143, 405
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 467
+  size: 580, 1353
+  orig: 580, 1403
+  offset: 0, 48
+  index: -1
+down
+  rotate: true
+  xy: 590, 1049
+  size: 528, 574
+  orig: 528, 574
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 409, 1679
+  size: 188, 146
+  orig: 188, 146
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 2, 1347
+  size: 330, 586
+  orig: 330, 586
+  offset: 0, 0
+  index: -1
+leg
+  rotate: true
+  xy: 1002, 1579
+  size: 246, 823
+  orig: 291, 830
+  offset: 30, 0
+  index: -1

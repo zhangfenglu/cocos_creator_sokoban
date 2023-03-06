@@ -1,0 +1,132 @@
+
+pet11.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 783, 172
+  size: 338, 293
+  orig: 338, 293
+  offset: 0, 0
+  index: -1
+10
+  rotate: true
+  xy: 1386, 53
+  size: 90, 78
+  orig: 90, 78
+  offset: 0, 0
+  index: -1
+11
+  rotate: true
+  xy: 940, 36
+  size: 134, 217
+  orig: 134, 217
+  offset: 0, 0
+  index: -1
+12
+  rotate: true
+  xy: 2, 2
+  size: 98, 298
+  orig: 98, 298
+  offset: 0, 0
+  index: -1
+13
+  rotate: false
+  xy: 563, 169
+  size: 218, 341
+  orig: 218, 341
+  offset: 0, 0
+  index: -1
+14
+  rotate: false
+  xy: 1159, 18
+  size: 128, 222
+  orig: 128, 222
+  offset: 0, 0
+  index: -1
+15
+  rotate: false
+  xy: 2, 102
+  size: 385, 408
+  orig: 385, 418
+  offset: 0, 0
+  index: -1
+16
+  rotate: false
+  xy: 1289, 145
+  size: 96, 109
+  orig: 96, 109
+  offset: 0, 0
+  index: -1
+17
+  rotate: false
+  xy: 1078, 242
+  size: 179, 268
+  orig: 179, 268
+  offset: 0, 0
+  index: -1
+18
+  rotate: true
+  xy: 1259, 256
+  size: 254, 210
+  orig: 254, 210
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 732, 31
+  size: 206, 136
+  orig: 206, 136
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 469, 116
+  size: 46, 84
+  orig: 46, 84
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 446, 113
+  size: 21, 49
+  orig: 21, 49
+  offset: 0, 0
+  index: -1
+5
+  rotate: true
+  xy: 547, 2
+  size: 112, 183
+  orig: 112, 183
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 389, 105
+  size: 57, 55
+  orig: 57, 58
+  offset: 0, 3
+  index: -1
+7
+  rotate: true
+  xy: 1289, 38
+  size: 105, 95
+  orig: 105, 95
+  offset: 0, 0
+  index: -1
+8
+  rotate: true
+  xy: 389, 164
+  size: 346, 172
+  orig: 346, 172
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 302, 2
+  size: 243, 98
+  orig: 243, 98
+  offset: 0, 0
+  index: -1

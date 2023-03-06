@@ -1,0 +1,41 @@
+
+role4601.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 751
+  size: 484, 1507
+  orig: 513, 1507
+  offset: 22, 0
+  index: -1
+hair
+  rotate: true
+  xy: 2, 1447
+  size: 118, 199
+  orig: 120, 202
+  offset: 0, 0
+  index: -1
+hair2
+  rotate: true
+  xy: 1101, 1237
+  size: 328, 464
+  orig: 703, 604
+  offset: 0, 0
+  index: -1
+hair_l
+  rotate: true
+  xy: 691, 1281
+  size: 284, 408
+  orig: 289, 411
+  offset: 0, 0
+  index: -1
+hair_r
+  rotate: true
+  xy: 203, 1304
+  size: 261, 486
+  orig: 261, 509
+  offset: 0, 0
+  index: -1

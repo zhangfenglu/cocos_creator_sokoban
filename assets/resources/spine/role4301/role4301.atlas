@@ -1,0 +1,62 @@
+
+role4301.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: true
+  xy: 620, 1508
+  size: 253, 265
+  orig: 253, 265
+  offset: 0, 0
+  index: -1
+bizhang
+  rotate: false
+  xy: 236, 1685
+  size: 102, 76
+  orig: 102, 76
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 133
+  size: 535, 1350
+  orig: 535, 1350
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 340, 1553
+  size: 208, 278
+  orig: 233, 278
+  offset: 22, 0
+  index: -1
+hair_l
+  rotate: false
+  xy: 1222, 670
+  size: 539, 1091
+  orig: 561, 1091
+  offset: 0, 0
+  index: -1
+hair_r
+  rotate: true
+  xy: 2, 1086
+  size: 399, 1218
+  orig: 399, 1218
+  offset: 0, 0
+  index: -1
+hat
+  rotate: false
+  xy: 887, 1487
+  size: 301, 274
+  orig: 301, 274
+  offset: 0, 0
+  index: -1
+sp
+  rotate: true
+  xy: 2, 1719
+  size: 42, 232
+  orig: 42, 240
+  offset: 0, 0
+  index: -1

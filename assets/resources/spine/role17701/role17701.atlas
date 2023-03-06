@@ -1,0 +1,111 @@
+
+role17701.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+back
+  rotate: false
+  xy: 671, 1463
+  size: 385, 331
+  orig: 386, 345
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 2
+  size: 668, 1414
+  orig: 682, 1414
+  offset: 14, 0
+  index: -1
+face
+  rotate: false
+  xy: 259, 1689
+  size: 173, 105
+  orig: 189, 109
+  offset: 5, 4
+  index: -1
+hair
+  rotate: true
+  xy: 690, 672
+  size: 712, 792
+  orig: 989, 819
+  offset: 277, 27
+  index: -1
+hair1
+  rotate: false
+  xy: 434, 1603
+  size: 235, 191
+  orig: 242, 200
+  offset: 0, 0
+  index: -1
+hair_l
+  rotate: true
+  xy: 2, 956
+  size: 505, 686
+  orig: 505, 700
+  offset: 0, 0
+  index: -1
+hair_r
+  rotate: true
+  xy: 1058, 1386
+  size: 408, 591
+  orig: 408, 591
+  offset: 0, 0
+  index: -1
+shihuaban01
+  rotate: false
+  xy: 47, 1776
+  size: 21, 18
+  orig: 21, 18
+  offset: 0, 0
+  index: -1
+shihuaban02
+  rotate: false
+  xy: 24, 1778
+  size: 21, 16
+  orig: 21, 16
+  offset: 0, 0
+  index: -1
+shihuaban06
+  rotate: false
+  xy: 2, 1779
+  size: 20, 15
+  orig: 20, 15
+  offset: 0, 0
+  index: -1
+shihuaban09
+  rotate: false
+  xy: 96, 1775
+  size: 25, 19
+  orig: 25, 19
+  offset: 0, 0
+  index: -1
+shihuaban10
+  rotate: false
+  xy: 96, 1775
+  size: 25, 19
+  orig: 25, 19
+  offset: 0, 0
+  index: -1
+shihuaban12
+  rotate: false
+  xy: 70, 1776
+  size: 24, 18
+  orig: 24, 18
+  offset: 0, 0
+  index: -1
+xuhuaban02
+  rotate: false
+  xy: 123, 1749
+  size: 48, 45
+  orig: 52, 49
+  offset: 2, 2
+  index: -1
+xuhuaban04
+  rotate: false
+  xy: 173, 1723
+  size: 84, 71
+  orig: 94, 77
+  offset: 5, 1
+  index: -1

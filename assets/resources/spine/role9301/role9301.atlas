@@ -1,0 +1,83 @@
+
+role9301.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 541
+  size: 417, 1327
+  orig: 790, 1327
+  offset: 373, 0
+  index: -1
+hair
+  rotate: false
+  xy: 421, 1125
+  size: 225, 274
+  orig: 225, 274
+  offset: 0, 0
+  index: -1
+sp
+  rotate: true
+  xy: 421, 1401
+  size: 467, 1045
+  orig: 467, 1050
+  offset: 0, 0
+  index: -1
+sp_l
+  rotate: false
+  xy: 871, 673
+  size: 534, 726
+  orig: 535, 726
+  offset: 0, 0
+  index: -1
+sp_r
+  rotate: true
+  xy: 2, 2
+  size: 537, 867
+  orig: 760, 867
+  offset: 223, 0
+  index: -1
+xingxing1
+  rotate: false
+  xy: 579, 1092
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+xingxing2
+  rotate: true
+  xy: 524, 998
+  size: 46, 65
+  orig: 46, 65
+  offset: 0, 0
+  index: -1
+xingxing3
+  rotate: false
+  xy: 524, 1046
+  size: 53, 77
+  orig: 53, 77
+  offset: 0, 0
+  index: -1
+xingxing_1
+  rotate: false
+  xy: 579, 1070
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+xiu_l
+  rotate: false
+  xy: 421, 775
+  size: 101, 348
+  orig: 101, 348
+  offset: 0, 0
+  index: -1
+xiu_r
+  rotate: true
+  xy: 421, 679
+  size: 94, 265
+  orig: 94, 265
+  offset: 0, 0
+  index: -1

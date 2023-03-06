@@ -162,7 +162,7 @@ cc.Class({
                 Prefab.y = -Prefab.parent.height / 2
                 let PrefabScript = Prefab.getComponent('View_Dialogue')
                 let Manager_Plot = app.getManager_Plot()
-                let juQingId = 2001
+                let juQingId = 2005
                 Manager_Plot.PlayJuQing(PrefabScript,juQingId,()=>{})
             })
         })

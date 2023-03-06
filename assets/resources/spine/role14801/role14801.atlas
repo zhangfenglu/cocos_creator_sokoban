@@ -1,0 +1,62 @@
+
+role14801.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 273, 327
+  size: 441, 674
+  orig: 441, 674
+  offset: 0, 0
+  index: -1
+face
+  rotate: true
+  xy: 716, 328
+  size: 130, 89
+  orig: 131, 89
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 2, 12
+  size: 268, 307
+  orig: 268, 307
+  offset: 0, 0
+  index: -1
+hair1
+  rotate: false
+  xy: 716, 460
+  size: 356, 541
+  orig: 356, 544
+  offset: 0, 3
+  index: -1
+hair2
+  rotate: true
+  xy: 311, 2
+  size: 323, 599
+  orig: 323, 599
+  offset: 0, 0
+  index: -1
+leg
+  rotate: false
+  xy: 2, 282
+  size: 269, 719
+  orig: 272, 719
+  offset: 3, 0
+  index: -1
+sp1
+  rotate: false
+  xy: 912, 116
+  size: 154, 156
+  orig: 154, 156
+  offset: 0, 0
+  index: -1
+sp2
+  rotate: false
+  xy: 912, 274
+  size: 180, 184
+  orig: 180, 184
+  offset: 0, 0
+  index: -1

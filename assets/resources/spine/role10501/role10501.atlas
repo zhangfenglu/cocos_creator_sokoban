@@ -1,0 +1,328 @@
+
+role10501.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: true
+  xy: 823, 145
+  size: 148, 175
+  orig: 173, 175
+  offset: 24, 0
+  index: -1
+arm_r
+  rotate: false
+  xy: 770, 1593
+  size: 226, 452
+  orig: 226, 452
+  offset: 0, 0
+  index: -1
+back
+  rotate: false
+  xy: 2, 1267
+  size: 766, 778
+  orig: 766, 778
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 5
+  size: 438, 1260
+  orig: 546, 1260
+  offset: 2, 0
+  index: -1
+hair
+  rotate: true
+  xy: 770, 1267
+  size: 324, 261
+  orig: 325, 261
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 823, 295
+  size: 152, 214
+  orig: 175, 220
+  offset: 23, 4
+  index: -1
+p1
+  rotate: false
+  xy: 998, 1673
+  size: 226, 372
+  orig: 226, 372
+  offset: 0, 0
+  index: -1
+p2
+  rotate: false
+  xy: 442, 88
+  size: 205, 372
+  orig: 205, 372
+  offset: 0, 0
+  index: -1
+pidou
+  rotate: true
+  xy: 442, 795
+  size: 470, 339
+  orig: 538, 437
+  offset: 27, 4
+  index: -1
+sp1
+  rotate: false
+  xy: 442, 462
+  size: 232, 331
+  orig: 234, 331
+  offset: 2, 0
+  index: -1
+sp2
+  rotate: false
+  xy: 649, 144
+  size: 172, 316
+  orig: 172, 316
+  offset: 0, 0
+  index: -1
+sp3
+  rotate: true
+  xy: 676, 511
+  size: 137, 255
+  orig: 137, 255
+  offset: 0, 0
+  index: -1
+sp4
+  rotate: true
+  xy: 676, 650
+  size: 143, 335
+  orig: 143, 335
+  offset: 0, 0
+  index: -1
+sp_l
+  rotate: true
+  xy: 658, 2
+  size: 86, 278
+  orig: 94, 297
+  offset: 8, 0
+  index: -1
+sp_r
+  rotate: true
+  xy: 933, 539
+  size: 109, 229
+  orig: 118, 229
+  offset: 0, 0
+  index: -1
+星光粒子a_0030
+  rotate: true
+  xy: 724, 91
+  size: 51, 72
+  orig: 68, 87
+  offset: 12, 9
+  index: -1
+星光粒子a_0031
+  rotate: false
+  xy: 977, 397
+  size: 51, 70
+  orig: 68, 87
+  offset: 12, 8
+  index: -1
+星光粒子a_0032
+  rotate: false
+  xy: 1046, 41
+  size: 51, 69
+  orig: 68, 87
+  offset: 11, 8
+  index: -1
+星光粒子a_0033
+  rotate: false
+  xy: 977, 325
+  size: 51, 70
+  orig: 68, 87
+  offset: 11, 7
+  index: -1
+星光粒子a_0034
+  rotate: false
+  xy: 1000, 253
+  size: 51, 70
+  orig: 68, 87
+  offset: 11, 7
+  index: -1
+星光粒子a_0035
+  rotate: false
+  xy: 1019, 112
+  size: 50, 71
+  orig: 68, 87
+  offset: 11, 6
+  index: -1
+星光粒子a_0036
+  rotate: true
+  xy: 946, 92
+  size: 51, 71
+  orig: 68, 87
+  offset: 10, 6
+  index: -1
+星光粒子a_0037
+  rotate: false
+  xy: 993, 19
+  size: 51, 71
+  orig: 68, 87
+  offset: 10, 6
+  index: -1
+星光粒子a_0038
+  rotate: true
+  xy: 798, 91
+  size: 51, 72
+  orig: 68, 87
+  offset: 10, 6
+  index: -1
+星光粒子a_0039
+  rotate: true
+  xy: 872, 92
+  size: 51, 72
+  orig: 68, 87
+  offset: 10, 6
+  index: -1
+星光粒子a_0040
+  rotate: false
+  xy: 442, 13
+  size: 52, 73
+  orig: 68, 87
+  offset: 10, 5
+  index: -1
+星光粒子a_0041
+  rotate: false
+  xy: 496, 13
+  size: 52, 73
+  orig: 68, 87
+  offset: 10, 5
+  index: -1
+星光粒子a_0042
+  rotate: false
+  xy: 550, 13
+  size: 52, 73
+  orig: 68, 87
+  offset: 10, 5
+  index: -1
+星光粒子a_0043
+  rotate: false
+  xy: 604, 13
+  size: 52, 73
+  orig: 68, 87
+  offset: 10, 5
+  index: -1
+星光粒子a_0044
+  rotate: true
+  xy: 649, 90
+  size: 52, 73
+  orig: 68, 87
+  offset: 10, 5
+  index: -1
+星光粒子a_0045
+  rotate: false
+  xy: 998, 1599
+  size: 53, 72
+  orig: 68, 87
+  offset: 10, 6
+  index: -1
+星光粒子a_0046
+  rotate: false
+  xy: 938, 21
+  size: 53, 69
+  orig: 68, 87
+  offset: 10, 8
+  index: -1
+星光粒子a_0047
+  rotate: false
+  xy: 977, 469
+  size: 53, 68
+  orig: 68, 87
+  offset: 9, 9
+  index: -1
+星光粒子a_0048
+  rotate: false
+  xy: 1000, 185
+  size: 54, 66
+  orig: 68, 87
+  offset: 8, 10
+  index: -1
+星光粒子a_0049
+  rotate: false
+  xy: 1030, 402
+  size: 53, 65
+  orig: 68, 87
+  offset: 8, 11
+  index: -1
+星光粒子a_0050
+  rotate: false
+  xy: 728, 464
+  size: 52, 45
+  orig: 68, 87
+  offset: 8, 13
+  index: -1
+星光粒子a_0051
+  rotate: false
+  xy: 782, 463
+  size: 24, 46
+  orig: 68, 87
+  offset: 7, 13
+  index: -1
+星光粒子a_0052
+  rotate: false
+  xy: 676, 462
+  size: 50, 47
+  orig: 68, 87
+  offset: 7, 12
+  index: -1
+星光粒子a_0053
+  rotate: true
+  xy: 1103, 293
+  size: 51, 48
+  orig: 68, 87
+  offset: 7, 12
+  index: -1
+星光粒子a_0054
+  rotate: true
+  xy: 1056, 233
+  size: 53, 48
+  orig: 68, 87
+  offset: 6, 12
+  index: -1
+星光粒子a_0055
+  rotate: true
+  xy: 1080, 346
+  size: 54, 48
+  orig: 68, 87
+  offset: 6, 12
+  index: -1
+星光粒子a_0056
+  rotate: true
+  xy: 1085, 425
+  size: 54, 48
+  orig: 68, 87
+  offset: 6, 12
+  index: -1
+星光粒子a_0057
+  rotate: true
+  xy: 1030, 345
+  size: 55, 48
+  orig: 68, 87
+  offset: 6, 12
+  index: -1
+星光粒子a_0058
+  rotate: true
+  xy: 1053, 288
+  size: 55, 48
+  orig: 68, 87
+  offset: 6, 12
+  index: -1
+星光粒子a_0059
+  rotate: true
+  xy: 1084, 481
+  size: 56, 50
+  orig: 68, 87
+  offset: 6, 11
+  index: -1
+星光粒子a_0060
+  rotate: true
+  xy: 1032, 480
+  size: 57, 50
+  orig: 68, 87
+  offset: 5, 11
+  index: -1

@@ -1,0 +1,90 @@
+
+role18601.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: false
+  xy: 1506, 579
+  size: 368, 443
+  orig: 368, 443
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 292, 255
+  size: 676, 767
+  orig: 716, 829
+  offset: 40, 62
+  index: -1
+down
+  rotate: false
+  xy: 970, 263
+  size: 336, 142
+  orig: 337, 150
+  offset: 1, 7
+  index: -1
+eye
+  rotate: false
+  xy: 2, 35
+  size: 146, 104
+  orig: 146, 108
+  offset: 0, 4
+  index: -1
+hair
+  rotate: true
+  xy: 718, 15
+  size: 238, 278
+  orig: 238, 278
+  offset: 0, 0
+  index: -1
+leg
+  rotate: false
+  xy: 2, 141
+  size: 288, 881
+  orig: 290, 881
+  offset: 0, 0
+  index: -1
+p1
+  rotate: true
+  xy: 1308, 301
+  size: 223, 206
+  orig: 223, 206
+  offset: 0, 0
+  index: -1
+p2
+  rotate: true
+  xy: 998, 26
+  size: 235, 182
+  orig: 235, 182
+  offset: 0, 0
+  index: -1
+sp
+  rotate: false
+  xy: 1182, 26
+  size: 153, 235
+  orig: 153, 235
+  offset: 0, 0
+  index: -1
+sp_l
+  rotate: true
+  xy: 1271, 526
+  size: 496, 233
+  orig: 496, 258
+  offset: 0, 22
+  index: -1
+sp_r
+  rotate: false
+  xy: 970, 407
+  size: 299, 615
+  orig: 306, 615
+  offset: 7, 0
+  index: -1
+weapon
+  rotate: false
+  xy: 292, 2
+  size: 424, 251
+  orig: 425, 255
+  offset: 0, 0
+  index: -1

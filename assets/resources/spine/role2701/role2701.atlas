@@ -1,0 +1,209 @@
+
+role2701.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: true
+  xy: 849, 252
+  size: 317, 402
+  orig: 323, 402
+  offset: 6, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 571
+  size: 975, 1465
+  orig: 976, 1465
+  offset: 1, 0
+  index: -1
+hair
+  rotate: true
+  xy: 2, 218
+  size: 351, 845
+  orig: 389, 845
+  offset: 38, 0
+  index: -1
+hair1
+  rotate: false
+  xy: 979, 945
+  size: 758, 1091
+  orig: 855, 1091
+  offset: 0, 0
+  index: -1
+hair2
+  rotate: true
+  xy: 849, 160
+  size: 90, 513
+  orig: 381, 571
+  offset: 0, 0
+  index: -1
+上升粒子b_10
+  rotate: true
+  xy: 1215, 57
+  size: 44, 107
+  orig: 82, 165
+  offset: 12, 1
+  index: -1
+上升粒子b_11
+  rotate: true
+  xy: 1327, 57
+  size: 48, 109
+  orig: 82, 165
+  offset: 10, 0
+  index: -1
+上升粒子b_12
+  rotate: true
+  xy: 1327, 107
+  size: 51, 109
+  orig: 82, 165
+  offset: 8, 0
+  index: -1
+上升粒子b_13
+  rotate: true
+  xy: 1215, 103
+  size: 55, 110
+  orig: 82, 165
+  offset: 6, 0
+  index: -1
+上升粒子b_14
+  rotate: false
+  xy: 2, 9
+  size: 58, 129
+  orig: 82, 165
+  offset: 5, 0
+  index: -1
+上升粒子b_15
+  rotate: true
+  xy: 824, 96
+  size: 62, 128
+  orig: 82, 165
+  offset: 3, 0
+  index: -1
+上升粒子b_16
+  rotate: false
+  xy: 203, 11
+  size: 65, 128
+  orig: 82, 165
+  offset: 1, 0
+  index: -1
+上升粒子b_17
+  rotate: false
+  xy: 343, 12
+  size: 68, 129
+  orig: 82, 165
+  offset: 0, 0
+  index: -1
+上升粒子b_18
+  rotate: false
+  xy: 699, 86
+  size: 70, 130
+  orig: 82, 165
+  offset: 0, 0
+  index: -1
+上升粒子b_19
+  rotate: true
+  xy: 416, 144
+  size: 72, 131
+  orig: 82, 165
+  offset: 0, 0
+  index: -1
+上升粒子b_20
+  rotate: true
+  xy: 280, 143
+  size: 73, 134
+  orig: 82, 165
+  offset: 0, 0
+  index: -1
+上升粒子b_21
+  rotate: true
+  xy: 142, 141
+  size: 75, 136
+  orig: 82, 165
+  offset: 0, 0
+  index: -1
+上升粒子b_22
+  rotate: true
+  xy: 2, 140
+  size: 76, 138
+  orig: 82, 165
+  offset: 0, 1
+  index: -1
+上升粒子b_23
+  rotate: false
+  xy: 416, 2
+  size: 35, 140
+  orig: 82, 165
+  offset: 10, 2
+  index: -1
+上升粒子b_24
+  rotate: true
+  xy: 593, 45
+  size: 39, 142
+  orig: 82, 165
+  offset: 8, 4
+  index: -1
+上升粒子b_25
+  rotate: false
+  xy: 549, 16
+  size: 42, 144
+  orig: 82, 165
+  offset: 7, 6
+  index: -1
+上升粒子b_26
+  rotate: false
+  xy: 771, 70
+  size: 51, 146
+  orig: 82, 165
+  offset: 5, 8
+  index: -1
+上升粒子b_27
+  rotate: true
+  xy: 549, 162
+  size: 54, 148
+  orig: 82, 165
+  offset: 3, 10
+  index: -1
+上升粒子b_28
+  rotate: true
+  xy: 1085, 102
+  size: 56, 128
+  orig: 82, 165
+  offset: 1, 12
+  index: -1
+上升粒子b_29
+  rotate: true
+  xy: 954, 100
+  size: 58, 129
+  orig: 82, 165
+  offset: 0, 14
+  index: -1
+上升粒子b_30
+  rotate: false
+  xy: 142, 10
+  size: 59, 129
+  orig: 82, 165
+  offset: 0, 17
+  index: -1
+上升粒子b_31
+  rotate: false
+  xy: 280, 11
+  size: 61, 130
+  orig: 82, 165
+  offset: 0, 20
+  index: -1
+上升粒子b_32
+  rotate: false
+  xy: 453, 10
+  size: 62, 132
+  orig: 82, 165
+  offset: 0, 22
+  index: -1
+上升粒子b_33
+  rotate: false
+  xy: 62, 10
+  size: 64, 128
+  orig: 82, 165
+  offset: 0, 27
+  index: -1

@@ -46,8 +46,8 @@ cc.Class({
 
     //数据初始化
     initData(juQingInfo, callBack){
-        cc.log('juQingInfo.plot_table====' + juQingInfo.plot_table)
         this.plot_table =  app.spitStrArr(juQingInfo.plot_table,"/")[1]
+        cc.log('this.plot_table====' + this.plot_table)
         this._callBack = callBack
         this._wordIndex = 0 //语句索引
         this._isSpeekOver = false //所有会话结束
@@ -64,13 +64,14 @@ cc.Class({
     initView:function() {
         app.btnClick(this.view['Panel_4'], ()=> {
             if(this._isSpeaking){
-                //app.setTypingSpead(2)
+                app.setTypingSpead(2)
             }else{
                 cc.log('=======================this._isPlayActioning===' + this._isPlayActioning + ' this._isCanNext====' + this._isCanNext)
                 if(!this._isPlayActioning && this._isCanNext ){
                     if (this._optionId == null || this._optionId === 0 || this._optionId === "" ){
                        /* if (this._soundHandle ) GlobalInterface.soundManager().stopEffect(this._soundHandle)
-                        this.nextSpeak()*/
+                        */
+                        this.nextSpeak()
                     }else{
                         //带选项 界面逻辑 暂不实现
 
@@ -78,12 +79,6 @@ cc.Class({
                 }
             }
         })
-        //app.dynamicAddPrefab('dhk',this.view['dhk'],(dhkPrefab)=> {
-            /*let dhkPrefabScript = dhkPrefab.getComponent('dhk')
-            dhkPrefabScript.setCallback(() => {
-                this.view['dhk'].removeAllChildren()
-            })*/
-       // })
     },
 
     startRun () {
@@ -105,8 +100,9 @@ cc.Class({
                 this.playCsbAction("animation" + this._curAnimation, this._loop === 1 ? true : false ,  ()=> {
                     this._isPlayActioning = false
                 })
-                app.log(' this._speakInterval====' +  this._speakInterval)
+                cc.log(' this._speakInterval====' +  this._speakInterval)
 
+                cc.log(' this._curSpeek=====' + this._curSpeek)
                 if(this.dialogBoxView) this.dialogBoxView.showA1(this._curSpeek,()=>{
                     this._isSpeaking = false
                 })
@@ -148,7 +144,7 @@ cc.Class({
         if (this._isSpeekOver) {
             app.delay(0.1 * 1000).then(()=>{
                 if (this._callBack) this._callBack()
-                this.node.onClose()
+                this.onClose()
             })
         } else {
             this.autoSpeek()
@@ -182,15 +178,21 @@ cc.Class({
                 let Scenario_Dialog_style = app.getConfigInfoByTable('Scenario_Table','Scenario_Dialog_style',this._dialogBox)
                 this.csb_path = Scenario_Dialog_style.csb_path
 
-              /* if(this._wordIndex === 1) {
-                    this.dialogBoxView = view.createView(this['dhk'],'GameView/Plot/dhk',this.csb_path,()=>{
-                        if (this._callBack) this._callBack()
-                        this.onClose()
-                    })
-                    this.dialogBoxView.cloneNextBtn(this)
+               if(this._wordIndex === 1) {
+                   app.dynamicAddPrefab('dhk',this.view['dhk'],(dhkPrefab)=>{
+                       this.dialogBoxView = dhkPrefab.getComponent('dhk')
+                       this.dialogBoxView.initData(this.csb_path,()=>{
+                           if (this._callBack) this._callBack()
+                           this.onClose()
+                       })
+                       this.dialogBoxView.setSpeakRoleName(this._curSpeekName,this._curRoleName)
+                   })
                 }
 
-                if(this.dialogBoxView) this.dialogBoxView.setSpeakRoleName(this._curSpeekName,this._curRoleName)*/
+                if(this.dialogBoxView) {
+                    cc.log('this._curRoleName----' + this._curRoleName)
+                    this.dialogBoxView.setSpeakRoleName(this._curSpeekName,this._curRoleName)
+                }
 
                 if(typeof(curDiaLog.RoleAction) !== undefined) this._curAnimation = parseInt(this._wordIndex - 1)
                 else this._curAnimation = curDiaLog.RoleAction
@@ -208,7 +210,7 @@ cc.Class({
 
                 //播放声音处理
                 if (this._effect !== 0) {
-                    if (this._soundHandle) GlobalInterface.soundManager().stopEffect(this._soundHandle)
+                    //if (this._soundHandle) GlobalInterface.soundManager().stopEffect(this._soundHandle)
                     let scenario_RoleVoice = app.getConfigInfoByTable('Scenario_Table','Scenario_RoleVoice',this._effect)
                     this._effect = scenario_RoleVoice.path
                    // this._soundHandle = GlobalInterface.soundManager().playEffect(this._effect)
@@ -258,6 +260,7 @@ cc.Class({
                 this.A2_way = curDiaLog.A2_way
                 this.A3 = curDiaLog.A3
                 this.A3_way = curDiaLog.A3_way
+                cc.log('this.A1===' + this.A1 + ' this.A2 ====' + this.A2 + '  this.A3 ====' + this.A3)
                 let scenario_Role1 = app.getConfigInfoByTable('Scenario_Table','Scenario_Role',this.A1)
                 if(typeof (this.A1) === undefined) scenario_Role1 = null
                 let scenario_Role2 = app.getConfigInfoByTable('Scenario_Table','Scenario_Role',this.A2)
@@ -281,60 +284,67 @@ cc.Class({
                 let csbActionName3 = null
                 if(scenario_Role_Display_effect3) csbActionName3 = scenario_Role_Display_effect3.csbActionName
 
+                cc.log('scenario_Role1====' + scenario_Role1 + ' scenario_Role2===' + scenario_Role2 + '  scenario_Role3---' + scenario_Role3)
                 if(scenario_Role1) {
-                   /* if(this.roleView1 && this.roleView1.getRole() === scenario_Role1){}
-                    else{
+                    if(this.roleView1 && this.roleView1.getRole() === scenario_Role1){}
+                    else {
                         if(this.roleView1){
                             this.roleView1.onClose()
-                            this.roleView1 = null
                         }
-                        this.roleView1 = view.createView(this['girl_1'],'GameView/Plot/girl')
-                        if(csbActionName1) this.roleView1.showCsbAction(csbActionName1)
-                        this.roleView1.showRole(scenario_Role1)
-                    }*/
+                        app.dynamicAddPrefab('girl', this.view['girl_1'], (Prefab) => {
+                            cc.log('进来了女孩啊啊啊')
+                            this.roleView1 = Prefab.getComponent('girl')
+                            this.roleView1.initData()
+                            if (csbActionName1) this.roleView1.showCsbAction(csbActionName1)
+                            this.roleView1.showRole(scenario_Role1)
+                        })
+                    }
                 }
                 else{
-                   /* if(this.roleView1){
+                    if(this.roleView1){
                         this.roleView1.onClose()
-                        this.roleView1 = null
-                    }*/
+                    }
                 }
                 if(scenario_Role2) {
-                   /* if(this.roleView2 && this.roleView2.getRole() === scenario_Role2){}
+                    if(this.roleView2 && this.roleView2.getRole() === scenario_Role2){}
                     else {
-                        if (this.roleView2) {
+                        if(this.roleView2){
                             this.roleView2.onClose()
-                            this.roleView2 = null
                         }
-                        this.roleView2 = view.createView(this['girl_2'], 'GameView/Plot/girl')
-                        if(csbActionName2) this.roleView2.showCsbAction(csbActionName2)
-                        this.roleView2.showRole(scenario_Role2)
-                    }*/
+                        app.dynamicAddPrefab('girl', this.view['girl_2'], (Prefab) => {
+                            cc.log('进来了女孩2222啊啊啊')
+                            this.roleView2 = Prefab.getComponent('girl')
+                            this.roleView2.initData()
+                            if (csbActionName2) this.roleView1.showCsbAction(csbActionName2)
+                            this.roleView2.showRole(scenario_Role2)
+                        })
+                    }
                 }
                 else{
-                   /* if(this.roleView2){
+                    if(this.roleView2){
                         this.roleView2.onClose()
-                        this.roleView2 = null
-                    }*/
+                    }
                 }
 
                 if(scenario_Role3) {
-                   /* if(this.roleView3 && this.roleView3.getRole() === scenario_Role3){}
+                    if(this.roleView3 && this.roleView3.getRole() === scenario_Role3){}
                     else {
-                        if (this.roleView3) {
+                        if(this.roleView3){
                             this.roleView3.onClose()
-                            this.roleView3 = null
                         }
-                        this.roleView3 = view.createView(this['girl_3'], 'GameView/Plot/girl')
-                        if(csbActionName3) this.roleView3.showCsbAction(csbActionName3)
-                        this.roleView3.showRole(scenario_Role3)
-                    }*/
+                        app.dynamicAddPrefab('girl', this.view['girl_3'], (Prefab) => {
+                            cc.log('进来了女孩啊3333啊啊')
+                            this.roleView3 = Prefab.getComponent('girl')
+                            this.roleView3.initData()
+                            if (csbActionName3) this.roleView1.showCsbAction(csbActionName3)
+                            this.roleView3.showRole(scenario_Role3)
+                        })
+                    }
                 }
                 else {
-                   /* if (this.roleView3) {
+                    if (this.roleView3) {
                         this.roleView3.onClose()
-                        this.roleView3 = null
-                    }*/
+                    }
                 }
                 this.bg_pic = './er/' + this.bg_pic
                 if(this.bg_pic && this.view['bg']) {
@@ -342,8 +352,6 @@ cc.Class({
                         cc.log(' err====' + err)
                         this.view['bg'].getComponent(cc.Sprite).spriteFrame=frame
                     })
-
-                    //this['bg'].loadTexture(this.bg_pic, ccui.Widget.LOCAL_TEXTURE)
                 }
 
 
@@ -356,7 +364,6 @@ cc.Class({
     autoPlayJuQing() {
         let delayTime = cc.delayTime(1)
         let callback = cc.callFunc( ()=> {
-            cc.log('aaaaa1')
             if(this._isSpeaking){
 
             }else{
@@ -378,7 +385,6 @@ cc.Class({
         })
 
         let seq = cc.sequence(delayTime, callback)
-
         if(this._isAuto){
             this.node.runAction(cc.RepeatForever.create(seq))
         }else{
